@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft Yahei", sans-serif;
+}
+
+.container {
+  width: 850px;
+  height: 500px;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  position: relative;
+  background: #f8f8f8;
+}
+.bg-ellipse {
+  width: 340px;
+  height: 220px;
+  border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("9.jpg") center center no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.center-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 21;
+  text-align: center;
+  color: #fff;
+}
+
+.center-icon > span {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 12px;
+}
+
+.center-icon .logo {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+.center-icon .logo span {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 30px;
+  background: #fff;
+  color: #333;
+  font-weight: bold;
+  border-radius: 6px;
+}
+.card {
+  width: 240px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  position: absolute;
+  z-index: 10; 
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul li {
+  line-height: 24px;
+  color: #666;
+  font-size: 14px;
+  padding-left: 10px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.card ul li::before {
+  content: "•";
+  color: #007bff;
+  position: absolute;
+  left: 0;
+}
+.card-1 {
+  width: 270px;
+  top: 40px;
+  left: 110px;
+}
+.card-2 {
+  bottom: 30px;
+  left: 40px;
+}
+.card-3 {
+  bottom: 30px;
+  right: 40px;
+}
